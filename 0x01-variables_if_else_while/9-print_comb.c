@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * main -m main block
- * Description: prints all single number of base 10ase 10
- * starting from a new line 
+ * Description: prints all single number of base 10
+ * starting from a new line
  * Return: 0
  */
 int main(void)
