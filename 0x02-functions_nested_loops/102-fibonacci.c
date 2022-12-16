@@ -22,6 +22,6 @@ int main(void)
 			afn += n1;
 		}
 	}
-	printf("%d\n", afn);
+	printf("%ld\n", afn);
 	return (0);
 }
