@@ -1,29 +1,26 @@
 #include <stdio.h>
-#include <stdio.h>
 
 /**
- * main - prints all possible different combinations of the digits
- * Return: Always 0 (Success)
+ * main - prints combination of 2 digits
+ *
+ * Return: 0
+ *
  */
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int tens;
+	int ones;
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+	for (tens = 0; tens < 10; tens++)
 	{
-		for (ones = '0'; ones <= '9'; ones++)/* print ones digit*/
+		for (ones = tens + 1; ones <= 9; ones++)
 		{
-			if (!((ones == tens) || (tens > ones)))/* eliminate repitition*/
-
+			putchar(tens + '0');
+			putchar(ones + '0');
+			if (tens < 8)
 			{
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '8'))/* adds comma and space*/
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
@@ -31,4 +28,3 @@ int main(void)
 
 	return (0);
 }
-	
