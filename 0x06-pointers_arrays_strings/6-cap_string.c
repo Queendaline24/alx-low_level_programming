@@ -4,6 +4,7 @@
  * @s: input string
  * Return: the pointer to dest.
  */
+
 char *cap_string(char *s)
 {
 	int count = 0, i;
