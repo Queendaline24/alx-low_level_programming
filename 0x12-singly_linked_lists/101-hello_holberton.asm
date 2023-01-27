@@ -11,7 +11,9 @@ main:
 
     xor eax, eax
 
+
     call printf
+
 
     mov    eax, 0
 
